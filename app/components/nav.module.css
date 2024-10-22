@@ -1,0 +1,71 @@
+/* NavBar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .menuIcon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .logo {
+    margin-left: auto;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navList li {
+    margin: 0;
+  }
+  
+  .navList li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    padding: .5rem;
+  }
+  
+  .navList li a:hover {
+    background-color: #ccc;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 550px) {
+    .menuIcon {
+      display: block;
+    }
+  
+    .navList {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 3.5rem;
+      left: 0;
+      right: 0;
+      background-color: #E5E7EB;
+      width: 100%;
+    }
+  
+    .navList.showMenu {
+      display: flex;
+    }
+  
+    .navList li {
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+  }
+  

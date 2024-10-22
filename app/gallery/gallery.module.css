@@ -1,0 +1,290 @@
+/* --------------------------------------------------- */
+/* Banner Styles */
+/* --------------------------------------------------- */
+
+.banner {
+    background-color: #af0402; /* Red background */
+    color: #ffffff; /* White text color */
+    padding: 100px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0%;
+  }
+  .banner img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    object-fit: contain;
+    width: 200px;
+    height: 250px;
+  }
+  
+  .banner .leftFlower {
+    left: 0;
+    top: 30%;
+    margin-left: -13px;
+  }
+  
+  .banner .rightFlower {
+    top: 60%;
+    right: 0;
+    transform: translateY(-50%) scaleX(-1); /* Flip the image horizontally */
+    margin-right: -13px;
+  }
+  
+  .banner img.leftPearl {
+    left: 0;
+    top: 30%;
+    margin-top: 33px;
+    opacity: 0.3;
+    height: 600px;
+  }
+  
+  .banner img.rightPearl {
+    top: 60%;
+    right: 0;
+    height: 600px;
+    transform: translateY(-50%) scaleX(-1); /* Flip the image horizontally */
+    margin-top: 33px;
+    opacity: 0.3;
+  }
+  
+  .banner h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  
+    /* --------------------------------------------------- */
+    /* Breadcrumb Styles */
+    /* --------------------------------------------------- */
+  
+    .breadcrumb {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin-top: 10px;
+    }
+    
+    .breadcrumb li {
+      margin: 0 5px;
+    }
+    
+    .breadcrumb li::after {
+      content: ">";
+      margin-left: 8px;
+    }
+    
+    .breadcrumb li:last-child::after {
+      content: "";
+    }
+  
+    /* --------------------------------------------------- */
+    /* Content Styles */
+   /* --------------------------------------------------- */
+  
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 100px; /* Increased padding */
+      background-color: #FFF6F6;
+    }
+    .content h1 {
+      font-size: 3.1em;
+    }
+    
+    .text {
+      flex: 1;
+      margin-right: 20px; /* Space between text and image */
+    }
+    
+    .image {
+      flex: 1;
+      text-align: right;
+    }
+    
+    .image img {
+      width: 600px; /* Set a fixed width */
+      height: 425px; /* Set a fixed height */
+      object-fit: cover; /* Ensures the image covers the area without distortion */
+    }
+  
+    /* --------------------------------------------------- */
+    /* Centered Content Styles */
+    /* --------------------------------------------------- */
+  
+    .centeredContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px; /* Same padding as .content */
+      text-align: center; /* Center text */
+    }
+    
+    .centeredContent h1 {
+      font-size: 2.5em; /* Adjust the size as needed */
+      margin-bottom: 5px; /* Space between elements */
+    }
+    
+    .centeredContent p {
+      font-size: 1.2em; /* Adjust the size as needed */
+      margin-bottom: 20px; /* Space between elements */
+    }
+    
+    .centeredContent button {
+      padding: 10px 20px; /* Adjust padding as needed */
+      font-size: 1em; /* Adjust the size as needed */
+      background-color: #AF0402;
+      color: white;
+      border-radius: 5px;
+    }
+    .centeredContent form {
+      padding: 20px;
+    }
+  
+    /* -------------------------------------------------- */
+    /* Gallery Styles */
+    /* ----------------------------------------------------- */
+  
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px; /* Adjust the gap between images */
+      padding: 40px; /* Same padding as .content */
+    }
+    
+    .galleryItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+    }
+    
+    .galleryItem img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Ensures the image covers the area without distortion */
+      padding-bottom: 1em;
+      border-radius: 10px;
+    }
+    
+    .galleryItem button {
+      padding: 10px 20px; /* Adjust padding as needed */
+      font-size: 1em; /* Adjust the size as needed */
+      background-color: #AF0402;
+      color: white;
+      border-radius: 5px;
+    }
+    
+    .bottomContent {
+        background-color: #AF0402;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px; /* Same padding as .content */
+        text-align: center; /* Center text */
+        border-radius: 20px;
+      }
+      
+      .bottomContent h1 {
+        font-size: 2.5em; /* Adjust the size as needed */
+        margin-bottom: 1px; /* Space between elements */
+        color: white;
+      }
+      
+      .bottomContent p {
+        font-size: 1em; /* Adjust the size as needed */
+        margin-bottom: 20px; /* Space between elements */
+        color: white;
+      }
+    
+      .bottomContent button {
+        color: #040000;
+        border-radius: .5em;
+        background-color: aliceblue;
+        padding: 10px;
+      }
+  
+      .bottomContent img {
+        position: absolute;
+        /* top: 50%; */
+        transform: translateY(-50%);
+        object-fit: contain;
+        width: 200px;
+        height: 250px;
+      }
+      
+      .bottomContent .leftFlower1 {
+        left: 0;
+        margin-top: 190px;
+        margin-left: -5px;
+      }
+      
+      .bottomContent .rightFlower1 {
+        right: 0;
+        margin-top: 280px;
+        margin-right: -5px;
+        transform: translateY(-50%) scaleX(-1); /* Flip the image horizontally */
+      }
+      
+      .bottomContent img.leftPearl1 {
+        left: 0;
+        margin-top: 615px;
+        margin-left: 8px;
+        opacity: 0.3;
+        height: 600px;
+      }
+      
+      .bottomContent img.rightPearl1 {
+        right: 0;
+        margin-top: 710px;
+        margin-right: 8px;
+        opacity: 0.3;
+        height: 600px;
+        transform: translateY(-50%) scaleX(-1); /* Flip the image horizontally */
+      }
+    
+  
+      /* @media  */
+  
+      @media (max-width: 500px) {
+        .content {
+          flex-direction: column; /* Change layout to column on small screens */
+          padding: 20px; /* Reduce padding for small screens */
+        }
+        
+        .image img {
+          width: 100%; /* Make the image responsive */
+          height: auto; /* Adjust the height accordingly */
+        }
+      
+        .gallery {
+          grid-template-columns: 1fr; /* Stack gallery items in a single column */
+          gap: 10px; /* Adjust gap for smaller screens */
+        }
+      
+        .galleryItem {
+          width: 100%; /* Ensure gallery items fill the available width */
+        }
+      
+        .bottomContent img {
+          width: 100px; /* Adjust the size of the images in .bottomContent */
+          height: 120px; /* Adjust the height proportionally */
+        }
+      
+        .bottomContent .leftFlower1,
+        .bottomContent .rightFlower1,
+        .bottomContent img.leftPearl1,
+        .bottomContent img.rightPearl1 {
+          margin-top: 100px; /* Adjust spacing if needed */
+          width: 100px; /* Scale down flower and pearl images */
+          height: 150px; /* Adjust heights accordingly */
+        }
+      }
+      
